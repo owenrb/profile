@@ -1,0 +1,9 @@
+<div class="project">
+    <h4>{{data?.name}}</h4>
+    <strong>{{data?.role}}</strong>
+    <div>{{data?.description}}</div>
+    <div>{{data?.responsibility}}</div>
+    <mat-chip-list aria-label="Tools">
+        <mat-chip  *ngFor="let item of data?.tools">{{item}}</mat-chip>
+    </mat-chip-list>
+</div>

@@ -12,7 +12,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs'
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
+import { MatChipsModule } from '@angular/material/chips';
+import {MatStepperModule} from '@angular/material/stepper';
 
 import { GuidingPrinciplesComponent } from './guiding-principles/guiding-principles.component';
 import { SpecializationsComponent } from './specializations/specializations.component';
@@ -20,6 +22,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { CertsEduComponent } from './certs-edu/certs-edu.component'
 import { RouterModule } from '@angular/router';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { DesignPatternsComponent } from './design-patterns/design-patterns.compo
     SpecializationsComponent,
     ExperiencesComponent,
     CertsEduComponent,
-    DesignPatternsComponent
+    DesignPatternsComponent,
+    ExperienceComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,8 @@ import { DesignPatternsComponent } from './design-patterns/design-patterns.compo
     MatExpansionModule,
     FlexLayoutModule,
     MatTableModule,
+    MatChipsModule,
+    MatStepperModule,
     RouterModule.forRoot([
       { path: 'aboutMe', component: AboutMeComponent },
       { path: 'principles', component: GuidingPrinciplesComponent },

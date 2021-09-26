@@ -1,0 +1,4 @@
+<div class="experience">
+<i>{{data?.from}} ~ {{data?.to}}</i>
+<app-project  *ngFor="let item of data?.projects" [data]="item"></app-project>
+</div>

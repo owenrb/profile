@@ -1,1 +1,12 @@
-<p>experiences works!</p>
+<mat-stepper orientation="vertical">
+    
+  <mat-step *ngFor="let item of dataSource">
+    <ng-template matStepLabel>{{item?.company}}</ng-template>
+    <ng-template matStepContent>
+        <app-experience [data]="item"></app-experience>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+
+</mat-stepper>
+
