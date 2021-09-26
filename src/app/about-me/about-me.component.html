@@ -1,0 +1,41 @@
+
+
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+      <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+
+        <h3>Hello, world: my name is Owen Bringino</h3>
+
+        <ul>
+            <li>I am a <strong>full-stack sofware developer</strong>: result- driven, client-focused, team-player, and analytical.</li>
+            <li>I have extensive experience in all phases of the Software Development Life Cycle, from design to coding to testing to deployment and technical support.</li>
+            <li>I also possess several years of <strong>leading technical teams</strong></li>
+        </ul>
+        
+        <p>
+            I'm currently practicing Java enterprise solutions based on Spring Framework, MyBatis ORM, WebServices based on JAX-RS specification, and various work on integration.
+        </p>
+        
+        <p>
+            I'm an avid fan of coding best practices, living the principles of loosely coupled and cohesive designs.
+        </p>
+        
+        <p>
+            My other technological interests include the Cloud, MicroServices, SpringBoot, Angular, and React Native mobile development.
+        </p>
+
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+  
+  </mat-drawer-container>
+  

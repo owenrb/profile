@@ -1,0 +1,172 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+        <p>Auto-resizing sidenav</p>
+        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <h3>The basics is equal to solid foundation</h3>
+
+        <h4>Programming Principles</h4>
+        <mat-accordion class="content">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#1 Identify the aspects of your application that vary and separate them from what
+                        stays
+                        the same.</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#2 Favor composition over inheritance</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#3 Strive for loosely coupled designs between objects that interact
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#4 Open-close principle </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#5 Single Responsibility</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#6 The principle of least knowledge</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Talk only to your immediate friends</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <h4>Code Quality</h4>
+        <mat-accordion class="content">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Code quality is loosely coupled</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Loose coupling means the code is more independent and easier to test in smaller units.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Code quality is cohesive</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Cohesion means that the code is more focused to deal with only one thing at a time,
+                    and it makes code much clearer and more straightforward to work with.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Code quality is non-redundant</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Code that is non-redundant costs less to maintain and extend.</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <h4>The 7 Golden Virtues</h4>
+        <mat-accordion class="content">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#1 Effectiveness</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#2 Robustness/safety/reliability</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#3 Maintainability</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#4 Flexibility</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#5 Reusability/portability</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#6 Scalability</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>#7 Efficiency</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <h4>The 5 Service Dimensions</h4>
+
+        <mat-accordion class="content">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Reliability</mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-panel-description>#1 Just do it</mat-panel-description>
+                <p>Do what you say you’re going to do when you said you were going to do it.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Responsiveness</mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-panel-description>#2 Do it now</mat-panel-description>
+                <p>Respond quickly, promptly, rapidly, immediately, instantly.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Assurance</mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-panel-description>#3 Know what you are doing</mat-panel-description>
+                <p>Service providers are expected to be the experts of the service they’re delivering. It’s a given</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Empathy</mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-panel-description>#4 Care about customers</mat-panel-description>
+                <p>Services can be performed completely to specifications. Yet customers may not feel provider employees
+                    care about them during delivery.
+                    And this hurts customers’ assessments of providers’ service quality.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Tangibles</mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-panel-description>#5 Look sharp</mat-panel-description>
+                <p>Even though this is the least important dimension, appearance matters. Just not as much as the other
+                    dimensions.</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+        </button>
+    </div>
+</mat-drawer-container>
