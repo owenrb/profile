@@ -14,7 +14,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatChipsModule } from '@angular/material/chips';
-import {MatStepperModule} from '@angular/material/stepper';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { GuidingPrinciplesComponent } from './guiding-principles/guiding-principles.component';
 import { SpecializationsComponent } from './specializations/specializations.component';
@@ -24,6 +25,7 @@ import { RouterModule } from '@angular/router';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectComponent } from './project/project.component';
+import { GlossaryComponent } from './glossary/glossary.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { ProjectComponent } from './project/project.component';
     CertsEduComponent,
     DesignPatternsComponent,
     ExperienceComponent,
-    ProjectComponent
+    ProjectComponent,
+    GlossaryComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { ProjectComponent } from './project/project.component';
     MatTableModule,
     MatChipsModule,
     MatStepperModule,
+    MatDialogModule,
     RouterModule.forRoot([
       { path: 'aboutMe', component: AboutMeComponent },
       { path: 'principles', component: GuidingPrinciplesComponent },
