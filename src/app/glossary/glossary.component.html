@@ -1,37 +1,11 @@
-<div *ngIf="code === 'OOP'">
-    Object Oriented Programming is a programming paradigm based on the concept of objects.
-    <p>Its main feature is called A-PIE.</p>
-    <mat-accordion>
-        <mat-expansion-panel hideToggle>
+<div *ngFor="let item of glossary">
+    {{item.description}}
+    <mat-accordion *ngIf="item?.accordion">
+        <mat-expansion-panel hideToggle *ngFor="let acc of item?.accordion">
           <mat-expansion-panel-header>
-            <mat-panel-title>Abstraction</mat-panel-title>
+            <mat-panel-title>{{acc.title}}</mat-panel-title>
           </mat-expansion-panel-header>
-          <p>It is a technique for arranging the complexity of a system by suppressing the more complex details
-              below its current level.
-          </p>
-        </mat-expansion-panel>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Polymorphism</mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>It is the ability of an object to take on many form.</p>
-        </mat-expansion-panel>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Inheritance</mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>It is a feature that represents the "IS-A" relationship between classes.<br/>
-            The child class inherits the visible properties and methods of its parent 
-            while adding new properties and methods of its own.
-          </p>
-        </mat-expansion-panel>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Encapsulation</mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>It is the mechanism for restricting direct access to some of the object's components.
-          </p>
+          <p>{{acc.body}}</p>
         </mat-expansion-panel>
     </mat-accordion> 
-
 </div>

@@ -1,5 +1,9 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { GLOSSARY, Glossary } from '../data/glossary';
+
+
+
 
 @Component({
   selector: 'app-glossary',
@@ -8,7 +12,15 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class GlossaryComponent implements OnInit {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public code: string) { }
+  glossary: Glossary[];
+
+  constructor(@Inject(MAT_DIALOG_DATA) public code: string) { 
+
+    this.glossary = GLOSSARY.filter(g => g.code === code);
+
+  }
+
+
 
   ngOnInit(): void {
   }
